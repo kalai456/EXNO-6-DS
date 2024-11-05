@@ -33,7 +33,7 @@ sns.lineplot(x=x,y=y)
 ```
 
 ### OUTPUT:
-![alt text](image.png)
+![alt text](screenshot/image.png)
 
 ### SHOW THE DATASET VALUES:
 ```
@@ -42,14 +42,14 @@ df
 ```
 
 ### OUTPUT:
-![alt text](image-1.png)
+![alt text](screenshot/image-1.png)
 
 ```PYTHON
 sns.lineplot(x='total_bill',y='tip',data=df,hue='sex',linestyle='solid',legend='auto')
 ```
 
 ### OUTPUT:
-![alt text](image-2.png)
+![alt text](screenshot/image-2.png)
 
 ## MULTI-LINE PLOT:
 ```PYTHON
@@ -68,7 +68,7 @@ plt.ylabel('Y label')
 ```
 
 ### OUTPUT:
-![alt text](image-3.png)
+![alt text](screenshot/image-3.png)
 
 ## BAR PLOT:
 ```PYTHON
@@ -91,7 +91,7 @@ plt.legend()
 ```
 
 ### OUTPUT:
-![alt text](image-4.png)
+![alt text](screenshot/image-4.png)
 
 ### CREATE A STACKED BAR PLOT:
 ```PYTHON
@@ -107,7 +107,7 @@ plt.title('Average Total Bill and Tip by Day')
 plt.legend()
 ```
 ### OUTPUT:
-![alt text](image-5.png)
+![alt text](screenshot/image-5.png)
 
 ```PYTHON
 import seaborn as sns
@@ -120,7 +120,7 @@ plt.ylabel('total Bill')
 plt.title('Total Bill by Day and Gender')
 ```
 ### OUTPUT:
-![alt text](image-6.png)
+![alt text](screenshot/image-6.png)
 
 ```PYTHON
 import seaborn as sns
@@ -133,7 +133,7 @@ plt.ylabel('total Bill')
 plt.title('Total Bill by Day and Gender')
 ```
 ### OUTPUT:
-![alt text](image-7.png)
+![alt text](screenshot/image-7.png)
 
 ## USING TIPS DATASET IMPLEMENT SCATTER PLOT OF THE TOTAL BILL VS TIP AMOUNT:
 ```PYTHON
@@ -148,7 +148,7 @@ plt.ylabel('Tip Amount')
 plt.title('Scatter Plot of Total Bill vs. Tip Amount')
 ```
 ### OUTPUT:
-![alt text](image-8.png)
+![alt text](screenshot/image-8.png)
 
 ### VIOLIN PLOT:
 ```PYTHON
@@ -160,7 +160,7 @@ plt.title("Violin Pot of Total Bill by Day and Smoker status")
 ```
 
 ### OUTPUT:
-![alt text](image-9.png)
+![alt text](screenshot/image-9.png)
 
 ```PYTHON
 import seaborn as sns
@@ -171,14 +171,14 @@ sns.violinplot(x='day', y='tip', data=tip, palette="hsv")
 ```
 
 ### OUTPUT:
-![alt text](image-10.png)
+![alt text](screenshot/image-10.png)
 
 ```python
 sns.violinplot(x='day', y='tip', hue='sex', data=tip, palette='Set2', split=True, scale='count', inner='quartile', bw=0.5, linewidth=1)
 ```
 
 ### OUTPUT:
-![alt text](image-13.png)
+![alt text](screenshot/image-13.png)
 
 ```PYTHON
 import seaborn as sns
@@ -188,7 +188,7 @@ tip = sns.load_dataset('tips')
 sns.violinplot(x='tip', y='day', data=tip, palette="Spectral")
 ```
 ### OUTPUT:
-![alt text](image-11.png)
+![alt text](screenshot/image-11.png)
 
 ```PYTHON
 sns.set_theme(style='whitegrid')
@@ -197,7 +197,7 @@ sns.violinplot(x=tip["total_bill"])
 ```
 
 ### OUTPUT:
-![alt text](image-12.png)
+![alt text](screenshot/image-12.png)
 
 ### BOX PLOT:
 ```PYTHON
@@ -208,14 +208,14 @@ sns.boxplot(x='day', y='total_bill', hue='sex', data=tips, palette='dark')
 ```
 
 ### OUTPUT:
-![alt text](image-14.png)
+![alt text](screenshot/image-14.png)
 
 ```python
 sns.boxplot(x='day',y='total_bill',hue='smoker',data=tips,linewidth=2,width=0.6,boxprops={"facecolor":"green","edgecolor":"yellow"},whiskerprops={"color":"green","linestyle":"--","linewidth":1.5},capprops={"color":"black","linestyle":"--","linewidth":1.5})
 ```
 
 ### OUTPUT:
-![alt text](image-15.png)
+![alt text](screenshot/image-15.png)
 
 ### KDE PLOT:
 ```PYTHON
@@ -223,21 +223,21 @@ sns.kdeplot(data=tips,x='total_bill',hue='time',multiple='fill',linewidth=3,pale
 ```
 
 ### OUTPUT:
-![alt text](image-16.png)
+![alt text](screenshot/image-16.png)
 
 ```PYTHON
 sns.kdeplot(data=tips,x='total_bill',hue='time',multiple='layer',linewidth=3,palette='crest',alpha=0.8)
 ```
 
 ### OUTPUT:
-![alt text](image-17.png)
+![alt text](screenshot/image-17.png)
 
 ```PYTHON
 sns.kdeplot(data=tips,x='total_bill',hue='time',multiple='stack', linewidth=3,palette='colorblind',alpha=0.8)
 ```
 
 ### OUTPUT:
-![alt text](image-18.png)
+![alt text](screenshot/image-18.png)
 
 ```PYTHON
 sns.kdeplot(data=tips, x='total_bill', hue='time', fill=True, alpha=0.4, palette='bright')
@@ -247,28 +247,28 @@ plt.show()
 ```
 
 ### OUTPUT:
-![alt text](image-19.png)
+![alt text](screenshot/image-19.png)
 
 ```PYTHON
 data=np.random.randint(low=1,high=100,size=(10,10))
 print(data)
 ```
 ### OUTPUT:
-![alt text](image-20.png)
+![alt text](screenshot/image-20.png)
 
 ```PYTHON
 hm=sns.heatmap(data=data,annot=True)
 ```
 
 ### OUTPUT:
-![alt text](image-21.png)
+![alt text](screenshot/image-21.png)
 
 ```PYTHON
 sns.heatmap(data=data)
 ```
 
 ### OUTPUT:
-![alt text](image-22.png)
+![alt text](screenshot/image-22.png)
 
 ```python
 custom_palette = sns.color_palette("coolwarm", as_cmap=True)
@@ -278,7 +278,7 @@ plt.show()
 ```
 
 ### OUTPUT:
-![alt text](image-23.png)
+![alt text](screenshot/image-23.png)
 
 ```PYTHON
 hm = sns.heatmap(data=data, annot=True, annot_kws={"size": 10}, cmap='Reds')
@@ -287,7 +287,7 @@ plt.show()
 ```
 
 ### OUTPUT:
-![alt text](image-24.png)
+![alt text](screenshot/image-24.png)
 
 ```PYTHON
 tips=sns.load_dataset("tips")
@@ -297,7 +297,7 @@ sns.heatmap(corr,annot=True,cmap="plasma",linewidth=0.5)
 ```
 
 ### OUTPUT:
-![alt text](image-25.png)
+![alt text](screenshot/image-25.png)
 
 ## RESULT:
 Thus the Seaborn Libraries have used and done successfully.
